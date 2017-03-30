@@ -13,5 +13,8 @@
     "javascript"
   ],
   "author": "Dima Rudiachuk",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cool-ascii-faces": "^1.3.4"
+  }
 }

@@ -1,5 +1,11 @@
-var a = 1;
-var b = 4;
-var result = a + b;
+var http = require("http");
+var port = 8080;
 
-console.log(result);
+var server = http.createServer(function(request, response){
+	console.log(request.url);
+	response.end("hello from nodeJS server");
+});
+
+server.listen(port, function(){
+	console.log("server is listening port: " +port)
+});
